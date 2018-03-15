@@ -127,3 +127,17 @@ foo(a);
 console.log(a);/*123*/
 
 console.log(typeof NaN);/*Number*/
+
+
+/*补充，数据类型判等*/
+var i = 65;
+switch(new Boolean(true)){ 
+    case i>=60:
+        alert('及格');
+        break;
+    case i<60:
+        alert('不及格');
+        break;
+    default:
+        alert('default');
+}/*default*/
