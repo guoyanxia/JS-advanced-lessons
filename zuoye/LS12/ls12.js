@@ -6,7 +6,7 @@ function f1(){
 	return f2;
 }
 var f3=f1();
-console.log(f3())//1
+console.log(f3())//1返回的是函数体执行完的值
 console.log(f3());//2因为x变量没有被释放，长期存在
 
 function f1(){
@@ -16,7 +16,7 @@ function f1(){
 	return f2();
 }
 var f3=f1();
-console.log(f3);//1
+console.log(f3);//1返回的是一个函数体
 console.log(f3);//1
 //闭包是由函数和与其相关的引用环境组合而成的实体
 //闭包是词法作用域中的函数和其相关变量的包裹体
@@ -35,7 +35,7 @@ var inc2=createinc(5);//闭包2
 console.log(inc(1));//9
 console.log(inc2(1));//6
 
-//闭包的常见形式(以函数对向形式返回)
+//闭包的常见形式(以函数对象形式返回)
 var tmp=100;
 function foo(x){
 	var tmp=3;
